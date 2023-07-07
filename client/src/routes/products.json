@@ -1,56 +1,59 @@
 [{
-    "src":"",
-"name":"",
-"price":0
-
-    
+    "id":1,
+	"name": "Spiced Mint",
+	"detail": "Lorem ipsum dolor sit amet",
+	"price": "9.99$",
+    "image": "../public/photo/homeScreen/green-candle.png",
+    "counter":1
+},{
+    "id":1,
+	"name": "Sweet Straweberry",
+	"detail": "Lorem ipsum dolor sit amet",
+	"price": "9.99$",
+    "image": "../public/photo/homeScreen/purple-candle.png",
+    "counter":1
+},{
+    "id":1,
+	"name": "Cool Blueberries",
+	"detail": "Lorem ipsum dolor sit amet",
+	"price": "9.99$",
+	"image": "../public/photo/homeScreen/pink-candle.png",
+    "counter":1
+},{
+    "id":1,
+	"name": "Juicy Lemon",
+	"detail": "Lorem ipsum dolor sit amet",
+	"price": "9.99$",
+    "image": "../public/photo/homeScreen/yellow-candle.png",
+    "counter":1
+},{
+    "id":1,
+	"name": "Product name",
+	"detail": "Lorem ipsum dolor sit amet",
+	"price": "9.99$",
+    "image": "../public/photo/homeScreen/orange-candle.png",
+    "counter":1
+},{
+    "id":1,
+	"name": "Fragrant Cinnamon",
+	"detail": "Lorem ipsum dolor sit amet",
+	"price": "9.99$",
+    "image": "../public/photo/homeScreen/brown-candle.png",
+    "counter":4
+},{
+    "id":1,
+	"name": "Summer Cherries",
+	"detail": "Lorem ipsum dolor sit amet",
+	"price": "9.99$",
+    "image": "../public/photo/homeScreen/red-candle.png",
+    "counter":5
 },
 {
-    "src":"",
-"name":"",
-"price":0
-
-    
-},
-{
-    "src":"",
-"name":"",
-"price":0
-
-    
-},
-{
-    "src":"",
-"name":"",
-"price":0
-
-    
-},
-{
-    "src":"",
-"name":"",
-"price":0
-
-    
-},
-{
-    "src":"",
-"name":"",
-"price":0
-
-    
-},
-{
-    "src":"",
-"name":"",
-"price":0
-
-    
-},
-{
-    "src":"",
-"name":"",
-"price":0
-
-    
-}]
+    "id":1,
+	"name": "Clean Lavander",
+	"detail": "Lorem ipsum dolor sit amet",
+	"price": "9.99$",
+    "image": "../public/photo/homeScreen/lightpurple-candle.png",
+    "counter":1
+}
+]
