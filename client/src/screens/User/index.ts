@@ -1,2 +1,2 @@
-export { LoginPage } from "./auth/Login";
-export { SignUp } from "./auth/Signup";
+import { LoginScreen } from "./auth/Login";
+import { SignUpScreen } from "./auth/Signup";

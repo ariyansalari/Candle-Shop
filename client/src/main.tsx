@@ -1,9 +1,8 @@
 import React from "react"
 import ReactDOM from "react-dom/client"
-import { createRoot } from "react-dom/client";
 import {createBrowserRouter,RouterProvider} from "react-router-dom";
 import { MainLayout } from "./layout";
-import { Homescreen } from "./screens";
+import { Homescreen, LoginScreen, SignUpScreen } from "./screens";
 
 
 const router = createBrowserRouter([
@@ -13,7 +12,15 @@ const router = createBrowserRouter([
     children:[{
       path:"/",
       element:<Homescreen/>
-    }]
+    },
+  {
+    path:"/Login",
+    element:<LoginScreen/>
+  },
+{
+  path:"/SignUp",
+  element:<SignUpScreen/>
+}]
   }
 ]);
 

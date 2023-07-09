@@ -34,7 +34,9 @@ Discovery
 
 
           <Box>
-<Button variant="text" >{<UserHeader/>}</Button>
+<Button variant="text" >{<UserHeader onClick={()=>{
+  navigate("/SignUp")
+}}/>}</Button>
 <Button variant="text">{<ShopHeader/>}</Button>
 
           </Box>
