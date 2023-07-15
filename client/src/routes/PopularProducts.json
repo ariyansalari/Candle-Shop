@@ -1,0 +1,29 @@
+[{
+    "id":1,
+	"name": "Spiced Mint",
+	"detail": "Lorem ipsum dolor sit amet",
+	"price": "9.99$",
+    "image": "../public/photo/homeScreen/green-candle.png",
+    "counter":1
+},{
+    "id":1,
+	"name": "Sweet Straweberry",
+	"detail": "Lorem ipsum dolor sit amet",
+	"price": "9.99$",
+    "image": "../public/photo/homeScreen/purple-candle.png",
+    "counter":1
+},{
+    "id":1,
+	"name": "Cool Blueberries",
+	"detail": "Lorem ipsum dolor sit amet",
+	"price": "9.99$",
+	"image": "../public/photo/homeScreen/pink-candle.png",
+    "counter":1
+},{
+    "id":1,
+	"name": "Juicy Lemon",
+	"detail": "Lorem ipsum dolor sit amet",
+	"price": "9.99$",
+    "image": "../public/photo/homeScreen/yellow-candle.png",
+    "counter":1
+}]

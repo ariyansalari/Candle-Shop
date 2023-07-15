@@ -7,6 +7,7 @@ import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
 import { useNavigate } from "react-router-dom";
 import "./index.css"
 import { UseHeader } from "./UseHeader";
+import { HomePath, SignUpPath } from "@/main";
 export const HeaderMain = () => {
 const {
   navigate
@@ -17,8 +18,8 @@ const {
 
           <Box>
             
-          <Button variant="text" sx={{color:"green",fontWeight:600,fontSize:{sm:"14px",md:"18px",lg:"20px"}}} startIcon={<CandleHeader/> } onClick={()=>{
-            navigate("/")
+          <Button variant="text" sx={{color:"green",fontWeight:600,fontSize:{sm:"14px",md:"18px",lg:"20px"}}} startIcon={<CandleHeader fill="#56B280"/> } onClick={()=>{
+            navigate(HomePath)
           }}>
         Candleaf
       </Button>
@@ -35,7 +36,7 @@ Discovery
 
           <Box>
 <Button variant="text" >{<UserHeader onClick={()=>{
-  navigate("/SignUp")
+  navigate(SignUpPath)
 }}/>}</Button>
 <Button variant="text">{<ShopHeader/>}</Button>
 

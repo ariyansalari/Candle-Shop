@@ -2,26 +2,36 @@ import React from "react"
 import ReactDOM from "react-dom/client"
 import {createBrowserRouter,RouterProvider} from "react-router-dom";
 import { MainLayout } from "./layout";
-import { Homescreen, LoginScreen, SignUpScreen } from "./screens";
+import { Homescreen, SignInScreen, SignUpScreen,CardShoppingScreen } from "./screens";
 
+
+export const HomePath="/";
+export const SignInPath="/Login";
+export const SignUpPath="/SignUp";
+export const CardShoppingPath="/CardShopping";
 
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: HomePath,
     element: <MainLayout/>,
     children:[{
       path:"/",
       element:<Homescreen/>
-    },
-  {
-    path:"/Login",
-    element:<LoginScreen/>
+    }],
   },
 {
-  path:"/SignUp",
+  path:SignInPath,
+  element:<SignInScreen/>
+},
+{
+  path:SignUpPath,
   element:<SignUpScreen/>
-}]
-  }
+},
+{
+  path:CardShoppingPath,
+  element:<CardShoppingScreen/>
+}
+  
 ]);
 
 

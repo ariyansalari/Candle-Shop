@@ -1,18 +1,19 @@
 import express from "express"
 import { DataBase } from "./configs/db/index.mjs"
 import { ENVPath } from "./configs/env/index.mjs"
-
-const app=express()
+import { AuthRoutes } from "./routes/auth/SignUp/index.mjs"
+import cors from "cors"
 
 ENVPath()
 DataBase()
 
-app.get("/",(req,res)=>{
-res.write("god help me i'm going to fking give up")
-res.end()
-})
-
+const app=express()
+app.use(cors())
+app.use(express.json())
+app.use("/",AuthRoutes)
 const PORT=process.env.PORT||5000;
 app.listen(PORT,()=>{
-    console.log("bro your site connected!")
+    console.log("connected")
 })
+
+
