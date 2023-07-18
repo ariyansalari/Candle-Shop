@@ -1,5 +1,5 @@
 import { Router } from "express";
-import { Users } from "../../../models/auth/Signup/index.mjs";
+import { User } from "../../../models/auth/Signup/index.mjs";
 // import bcrypt from "bcryptjs"
 // import { registerSchema } from "../../../models/auth/Signup/index.mjs";
 // import { User } from "../../../models/auth/Signup/index.mjs";
@@ -30,7 +30,8 @@ AuthRoutes.post("/SignUp",async(req,res)=>{
 // const hashed=await bcrypt.hash(process.env.SECRET_KEY,hash)
 //         const {repeatpassword,...restBody}= req.body
 //         const user=await new User({...restBody,password:hashed})
-const user=await new Users({...req.body})
+const user=await new User({...req.body})
+console.log(user)
         await user.save()
     return res.status(201)
   

@@ -21,6 +21,7 @@ export const UseSignUp = () => {
 
         console.log(data)
         const signupdata=await SignUpdata(data)
+    
     })
     
 
