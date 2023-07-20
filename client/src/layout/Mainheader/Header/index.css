@@ -1,3 +1,28 @@
 .header-button button{
     padding: 0px !important;
 }
+.wrapper{
+    position: relative;
+}
+.wrapper .slider{
+    position: absolute;
+    width: 100%;
+    background-color: rgb(97, 95, 95);
+    transform: scaleY(0);
+    transition: all .5s ease;
+    transform-origin:top;
+padding: 10px;
+border-radius: 8px;
+}
+.wrapper:hover .slider{
+   
+    transform: scaleY(1);
+}
+.wrapper .slider li {
+  color: #FFFFFF;
+  margin: 4px;
+}
+.wrapper .slider li:hover {
+    color: #bbff00;
+    cursor: pointer;
+  }

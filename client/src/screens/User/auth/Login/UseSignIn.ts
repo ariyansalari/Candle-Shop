@@ -3,6 +3,7 @@ import { yupResolver } from "@hookform/resolvers/yup";
 import { styled } from '@mui/material/styles';
 import * as yup from 'yup';
 import { useNavigate } from "react-router-dom";
+import { SignIndata } from "@/api/services/auth/Login";
 export const UseLogin=()=>{
    
         const logSchema=yup.object({
@@ -15,9 +16,10 @@ export const UseLogin=()=>{
             resolver:yupResolver(logSchema),
             mode:"onChange",
         })
-        const loginSubbmit=(data:any)=>{
+        const loginSubbmit=(async(data:any)=>{
+            const res=await SignIndata(data)
             console.log(data)
-        }
+        })
     
         const navigate=useNavigate()
         const Root = styled('div')(({ theme }) => ({

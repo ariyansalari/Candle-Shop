@@ -8,7 +8,7 @@ export type SignupType={
 
 export const SignUpdata=async(data:SignupType)=>{
 
-    const res= await instanse.post("/SignUp",data)
+    const res=await instanse.post("/SignUp",data)
     return res.data
 }
 

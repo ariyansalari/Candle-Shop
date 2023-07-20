@@ -26,9 +26,21 @@ const {
           </Box>
 
 <Box className="header-button" sx={{display:{xs:"block",sm:"flex",md:"flex",lg:"flex"},alignItems:"center",gap:"30px"}}>
+
+  <Box className="wrapper">
+
           <Button  variant="text" sx={{color:"black",fontSize:{sm:"12px",md:"16px",lg:"18px"}}}  endIcon={<ArrowDropDownIcon style={{fill:"black"}}/>}>
 Discovery
+
       </Button>
+
+      <Box component={"ul"} sx={{listStyle:"none"}} className="slider">
+<Box component={"li"}>ariyan</Box>
+<Box component={"li"}>ariyan</Box>
+<Box component={"li"}>atiyan</Box>
+
+</Box>
+  </Box>
         <Typography sx={{fontSize:{sm:"12px",md:"16px",lg:"18px"}}}>About</Typography>
         <Typography sx={{fontSize:{sm:"12px",md:"16px",lg:"18px"}}}>Contact us</Typography>
         </Box>
